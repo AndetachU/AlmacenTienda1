@@ -1,0 +1,93 @@
+.Form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.Form-title {
+  color: #00386a;
+  margin: 0 0 15px;  
+}
+
+.Form-description {
+  color: rgba(#6d6665, 50%) ;
+}
+
+.login-container {
+  border-radius: 15px;
+  border: 1px solid #c5c1c0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 15px;
+}
+
+.Control-label {
+  color: #423e3d;
+  font-weight: bold;
+  transition: color 300ms ease;
+}
+
+.Control-requirements {
+   display: none;
+  background: pink;
+  border-top: none;
+  margin: -14px 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 200ms ease;
+  padding: 0 9px;
+}
+
+
+.Control-label--email {
+  order: -2;
+}
+
+.ControlInput--password {
+  order: 0;
+  padding-right: 50px;
+}
+
+.Control-label--password {
+  order: -1;
+  margin-bottom: -32px;
+}
+.Control-label--showPassword {
+  width: 32px;
+  position: relative;
+  top: 52px;
+  left: 100%;
+  text-align: right;
+  margin-left: -36px;
+  
+}
+
+
+
+.Button-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -13px;
+  margin-top: -13px;
+  opacity: 0;
+}	
+
+
+.Button {
+  padding: 10px;
+  user-select: none;
+}
+
+
+.spinner {
+  animation: dash 2s linear infinite;
+  animation-direction: normal;
+}
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
