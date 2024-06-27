@@ -22,8 +22,8 @@ public class ProductoDAOImpl implements ProductoDAO {
 	 return productoJpa.findByNombre(nombre);
 }
  @Override
- public List<Producto> getAllProductos() {
-     return productoJpa.findAll();
+ public List<Producto> getAllProductos() { 
+	return productoJpa.findAll();
  }
 
  @Override

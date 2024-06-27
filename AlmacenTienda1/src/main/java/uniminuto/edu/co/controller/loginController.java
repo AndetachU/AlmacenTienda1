@@ -43,8 +43,8 @@ public class loginController {
 			UserDetails userDetails = userDetailsService.loadUserByUsername(username);
     	
 // Verificar la contraseña
-if (userDetails != null && passwordEncoder().matches(password, userDetails.getPassword())) {
-// Autenticar al usuario
+      if (userDetails != null && passwordEncoder().matches(password, userDetails.getPassword())) {
+    // Autenticar al usuario
 	Authentication authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
 	SecurityContextHolder.getContext().setAuthentication(authentication);
 
